@@ -1,0 +1,20 @@
+.header {
+  background-color: $main-color;
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  padding-bottom: 0.3125rem;
+}
+.navigation__square {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}

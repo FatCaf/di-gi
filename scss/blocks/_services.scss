@@ -1,0 +1,75 @@
+.services__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services__text {
+  max-width: 32.1875rem;
+  margin: 0 3.75rem;
+  & p {
+    font-size: 1.125rem;
+    color: #797979;
+  }
+}
+
+.services__title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 3rem;
+  color: $main-color;
+}
+
+.services__subtitle {
+  margin-top: 5.3125rem;
+  font-size: 1.5rem;
+  color: #4a4a4a;
+}
+
+.separator {
+  width: 6.25rem;
+  height: 0.5rem;
+  background-color: $main-color;
+  margin: 2.1875rem 0;
+}
+
+.services__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "card_1 card_2 card_3 card_4"
+    "card_5 card_6 card_7 card_8";
+}
+
+.service__card {
+  width: 14.375rem;
+  height: 16.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service__card__one {
+  grid-area: card_1;
+}
+.service__card__two {
+  grid-area: card_2;
+}
+.service__card__three {
+  grid-area: card_3;
+}
+.service__card__four {
+  grid-area: card_4;
+}
+.service__card__five {
+  grid-area: card_5;
+}
+.service__card__six {
+  grid-area: card_6;
+}
+.service__card__seven {
+  grid-area: card_7;
+}
+.service__card__eight {
+  grid-area: card_8;
+}

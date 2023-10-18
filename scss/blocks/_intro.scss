@@ -1,0 +1,118 @@
+.intro {
+  background: url("/images/intro/bg-img.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+}
+
+.intro__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+.intro__title {
+  margin-top: 8.75rem;
+  text-align: center;
+  max-width: 32.125rem;
+  & h1 {
+    font-size: 6rem;
+    color: #fff;
+  }
+}
+
+.intro__text {
+  margin-top: 4.375rem;
+  max-width: 54.125rem;
+  text-align: center;
+  & p {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}
+
+.button {
+  background-color: $main-color;
+  color: #fff;
+  width: 12.5rem;
+  height: 3.125rem;
+  margin-top: 3.4375rem;
+  border-radius: 0.25rem;
+}
+
+.pagination {
+  margin-top: 5.625rem;
+  margin-bottom: 2.1875rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 0.625rem;
+  align-items: center;
+}
+
+.pagination__item {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #fff;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.slider__controls {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: 4.375rem;
+  height: 8.75rem;
+  z-index: 2;
+}
+
+.slider__control {
+  width: 100%;
+  height: 4.375rem;
+  background-color: $main-color;
+  position: relative;
+
+  &.slider__control__backward {
+    background-color: #f9f6e5;
+  }
+
+  &.slider__control__forward::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    right: 40%;
+    border: 3px solid;
+    border-color: #fff #fff transparent transparent;
+    width: 1.125rem;
+    height: 1.125rem;
+    transform: rotate(45deg);
+  }
+
+  &.slider__control__backward::before {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    border: 3px solid;
+    border-color: transparent transparent #929292 #929292;
+    width: 1.125rem;
+    height: 1.125rem;
+    transform: rotate(45deg);
+  }
+}
