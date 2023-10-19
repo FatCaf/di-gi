@@ -1,0 +1,29 @@
+.team__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 6.25rem;
+}
+.team__image img {
+  border-radius: 4px;
+}
+.team__info {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  & h3 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #4a4a4a;
+  }
+}
+
+.team__text {
+  max-width: 31.6875rem;
+  color: #9b9b9b;
+  font-size: 1.125rem;
+}
