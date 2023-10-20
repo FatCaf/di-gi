@@ -40,6 +40,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 img {
@@ -59,6 +60,20 @@ body {
   margin-right: auto;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
+}
+
+.button {
+  width: 12.5rem;
+  height: 3.125rem;
+  background-color: #f9f6e5;
+  border-radius: 4px;
+}
+
+.separator {
+  width: 6.25rem;
+  height: 0.5rem;
+  background-color: #2b4074;
+  margin: 2.1875rem 0;
 }
 
 .header {
@@ -129,13 +144,10 @@ body {
   color: #fff;
 }
 
-.button {
+.button--detail {
   background-color: #2b4074;
   color: #fff;
-  width: 12.5rem;
-  height: 3.125rem;
   margin-top: 3.4375rem;
-  border-radius: 0.25rem;
 }
 
 .pagination {
@@ -174,9 +186,6 @@ body {
   background-color: #2b4074;
   position: relative;
 }
-.slider__control.slider__control__backward {
-  background-color: #f9f6e5;
-}
 .slider__control.slider__control__forward::before {
   content: "";
   position: absolute;
@@ -194,10 +203,19 @@ body {
   top: 35%;
   left: 40%;
   border: 3px solid;
-  border-color: transparent transparent #929292 #929292;
+  border-color: transparent transparent #fff #fff;
   width: 1.125rem;
   height: 1.125rem;
   transform: rotate(45deg);
+}
+.slider__control:hover {
+  background-color: #f9f6e5;
+}
+.slider__control:hover.slider__control__forward::before {
+  border-color: #dadada #dadada transparent transparent;
+}
+.slider__control:hover.slider__control__backward::before {
+  border-color: transparent transparent #dadada #dadada;
 }
 
 .promo {
@@ -228,11 +246,9 @@ body {
 }
 
 .call__back {
-  width: 12.5rem;
-  height: 3.125rem;
   background-color: #f9f6e5;
   color: #2b4074;
-  border-radius: 0.25rem;
+  text-transform: uppercase;
 }
 
 .services__row {
@@ -260,13 +276,6 @@ body {
   margin-top: 5.3125rem;
   font-size: 1.5rem;
   color: #4a4a4a;
-}
-
-.separator {
-  width: 6.25rem;
-  height: 0.5rem;
-  background-color: #2b4074;
-  margin: 2.1875rem 0;
 }
 
 .services__cards {
@@ -299,10 +308,9 @@ body {
 
 .service__card__additional {
   text-align: center;
-  margin-top: 2.5rem;
   width: 0;
   height: 0;
-  transform: scale(0);
+  transform: scale(0, -100%);
   transition: height 0.5s linear;
 }
 .service__card__additional p {
@@ -468,6 +476,12 @@ body {
   font-size: 1.125rem;
 }
 
+.button--watch {
+  background-color: #2b4074;
+  color: #fff;
+  margin-top: 3.4375rem;
+}
+
 .news {
   background-color: #f9f6e5;
   padding: 3.75rem 0 5rem 0;
@@ -487,6 +501,7 @@ body {
 
 .news__row {
   width: 71.875rem;
+  height: 50.3125rem;
   -moz-column-count: 4;
        column-count: 4;
   -moz-column-gap: 20px;
@@ -508,15 +523,6 @@ body {
 .news__image {
   position: relative;
 }
-.news__image::before {
-  content: url("/images/hover_buttons/info_button_white.svg");
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  visibility: hidden;
-}
 .news__image img {
   width: 16.875rem;
   border-top-right-radius: 4px;
@@ -534,8 +540,8 @@ body {
   outline: 10px solid #2b4074;
   border-radius: 4px;
 }
-.news__image:hover::before {
-  visibility: visible;
+.news__image:hover .news__link {
+  z-index: 1;
 }
 .news__image:hover + .news__text {
   position: absolute;
@@ -546,6 +552,16 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
+}
+
+.news__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .news__text {
@@ -619,6 +635,20 @@ body {
 
 .footer {
   background-color: #2b4074;
+  position: relative;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12.5rem;
+  height: 3.125rem;
+  border-radius: 4px;
+  background-color: #2b4074;
+  position: absolute;
+  top: -1.5625rem;
+  left: 45%;
 }
 
 .footer__text {
@@ -702,8 +732,43 @@ body {
   font-family: "Dosis", sans-serif;
 }
 
+.footer__up__scroll {
+  width: 71.875rem;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer__up__scroll a {
+  padding-right: 2.625rem;
+  height: inherit;
+  padding-top: 15px;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  color: #4a4a4a;
+  position: relative;
+}
+.footer__up__scroll a::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-top: 2px solid #2b4074;
+  border-left: 2px solid #2b4074;
+  transform: rotate(45deg);
+  bottom: 10%;
+  right: 10%;
+}
+
 .footer__bottom__line {
   background-color: #f9f6e5;
   height: 2.625rem;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
