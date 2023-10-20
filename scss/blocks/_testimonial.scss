@@ -1,0 +1,51 @@
+.testimonial {
+  padding: 5.625rem 0 8.3125rem 0;
+}
+.testimonial__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 46.5625rem;
+  padding-top: 3.4375rem;
+
+  & p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2.25rem;
+    color: #4a4a4a;
+    text-align: center;
+    padding-bottom: 2.5rem;
+  }
+
+  & span {
+    color: $main-color;
+    font-weight: 700;
+  }
+}
+.testimonial__author {
+  text-align: center;
+
+  & p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+}
+.pagination.blue {
+  margin-top: 5rem;
+}
+.pagination__item.blue {
+  background-color: $main-color;
+  border-color: $main-color;
+
+  &:hover {
+    background-color: transparent;
+  }
+}

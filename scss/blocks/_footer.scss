@@ -1,0 +1,94 @@
+.footer {
+  background-color: $main-color;
+}
+
+.footer__text {
+  padding-top: 9.75rem;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+}
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //   padding: 87px 0 6.0625rem 0;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5.4375rem 0 85px 0;
+  width: 100%;
+}
+.footer__social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & i {
+    font-size: 1.25rem;
+    color: #fff;
+  }
+
+  height: 3.75rem;
+  width: 25%;
+  border: 2px solid #7ebf84;
+  border-left: none;
+
+  &:first-child {
+    border-left: 2px solid #7ebf84;
+  }
+}
+
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 6.0625rem;
+}
+.footer__navigation__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  & li {
+    padding-bottom: 0.625rem;
+    font-size: 0.75rem;
+    color: #fff;
+  }
+
+  & li:last-child {
+    padding-bottom: 0;
+  }
+}
+.navigation__item__header {
+  padding-bottom: 1.5625rem;
+  & p {
+    letter-spacing: 2px;
+    color: #f9f6e5;
+    font-size: 1.125rem;
+    font-family: "Dosis", sans-serif;
+  }
+}
+// .footer__up__scroll {
+// }
+
+.footer__bottom__line {
+  background-color: #f9f6e5;
+  height: 2.625rem;
+  width: 100%;
+}
