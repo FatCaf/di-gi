@@ -24,13 +24,6 @@
   color: #4a4a4a;
 }
 
-.separator {
-  width: 6.25rem;
-  height: 0.5rem;
-  background-color: $main-color;
-  margin: 2.1875rem 0;
-}
-
 .services__cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -47,10 +40,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-left: 1px solid #f9f6e5;
+  border-left: 1px solid $secondary-color;
 
   &:not(.top) {
-    border-top: 1px solid #f9f6e5;
+    border-top: 1px solid $secondary-color;
   }
 
   &:hover {
@@ -66,10 +59,9 @@
 
 .service__card__additional {
   text-align: center;
-  margin-top: 2.5rem;
   width: 0;
   height: 0;
-  transform: scale(0);
+  transform: scale(0, -100%);
   transition: height 0.5s linear;
   & p {
     font-weight: 500;
@@ -86,6 +78,7 @@
 .service__icon {
   width: 6.25rem;
   height: 6.25rem;
+
   display: flex;
   justify-content: center;
   align-items: center;

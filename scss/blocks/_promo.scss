@@ -27,9 +27,7 @@
 }
 
 .call__back {
-  width: 12.5rem;
-  height: 3.125rem;
-  background-color: #f9f6e5;
+  background-color: $secondary-color;
   color: $main-color;
-  border-radius: 0.25rem;
+  text-transform: uppercase;
 }

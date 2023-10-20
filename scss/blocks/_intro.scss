@@ -43,13 +43,10 @@
   }
 }
 
-.button {
+.button--detail {
   background-color: $main-color;
   color: #fff;
-  width: 12.5rem;
-  height: 3.125rem;
   margin-top: 3.4375rem;
-  border-radius: 0.25rem;
 }
 
 .pagination {
@@ -88,10 +85,6 @@
   background-color: $main-color;
   position: relative;
 
-  &.slider__control__backward {
-    background-color: #f9f6e5;
-  }
-
   &.slider__control__forward::before {
     content: "";
     position: absolute;
@@ -110,9 +103,21 @@
     top: 35%;
     left: 40%;
     border: 3px solid;
-    border-color: transparent transparent #929292 #929292;
+    border-color: transparent transparent #fff #fff;
     width: 1.125rem;
     height: 1.125rem;
     transform: rotate(45deg);
+  }
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+
+  &:hover.slider__control__forward::before {
+    border-color: #dadada #dadada transparent transparent;
+  }
+
+  &:hover.slider__control__backward::before {
+    border-color: transparent transparent #dadada #dadada;
   }
 }

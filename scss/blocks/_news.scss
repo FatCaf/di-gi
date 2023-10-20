@@ -18,6 +18,7 @@
 
 .news__row {
   width: 71.875rem;
+  height: 50.3125rem;
   column-count: 4;
   column-gap: 20px;
 }
@@ -34,16 +35,6 @@
 }
 .news__image {
   position: relative;
-
-  &::before {
-    content: url("/images/hover_buttons/info_button_white.svg");
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    visibility: hidden;
-  }
 
   & img {
     width: 16.875rem;
@@ -68,8 +59,8 @@
     border-radius: 4px;
   }
 
-  &:hover::before {
-    visibility: visible;
+  &:hover .news__link {
+    z-index: 1;
   }
 
   &:hover + .news__text {
@@ -83,6 +74,17 @@
     z-index: 1;
   }
 }
+
+.news__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
 .news__text {
   height: 2.5rem;
   width: 16.875rem;
