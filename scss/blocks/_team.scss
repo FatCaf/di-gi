@@ -8,12 +8,17 @@
   align-items: center;
   column-gap: 6.25rem;
 }
-.team__image img {
-  border-radius: 4px;
+.team__image {
+  width: 100%;
+
+  & img {
+    border-radius: 4px;
+  }
 }
+
 .team__info {
   display: flex;
-  flex: 2;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: start;

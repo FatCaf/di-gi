@@ -129,6 +129,7 @@ body {
 .intro__title {
   margin-top: 8.75rem;
   text-align: center;
+  width: 100%;
 }
 .intro__title h1 {
   font-size: 6rem;
@@ -140,6 +141,7 @@ body {
 
 .intro__text {
   margin-top: 4.375rem;
+  width: 100%;
   text-align: center;
 }
 .intro__text p {
@@ -233,6 +235,9 @@ body {
   padding: 55px 0;
 }
 
+.promo__text {
+  width: 100%;
+}
 .promo__text h3 {
   font-weight: 500;
   line-height: 2rem;
@@ -279,6 +284,7 @@ body {
   margin-top: 4.6875rem;
   line-height: 1.625rem;
   font-size: 1.5rem;
+  width: 100%;
   color: #4a4a4a;
 }
 
@@ -414,11 +420,16 @@ body {
        column-gap: 1.3125rem;
 }
 
+.project__item {
+  width: 25%;
+}
+
 .project__image {
   position: relative;
 }
 .project__image img {
   border-radius: 4px;
+  width: 100%;
 }
 .project__image::before {
   content: "";
@@ -426,8 +437,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 15.1875rem;
-  height: 13.5625rem;
+  width: 90%;
+  padding-top: 80%;
   background-color: #f9f6e5;
   border-radius: 4px;
   opacity: 0;
@@ -475,13 +486,16 @@ body {
        column-gap: 6.25rem;
 }
 
+.team__image {
+  width: 100%;
+}
 .team__image img {
   border-radius: 4px;
 }
 
 .team__info {
   display: flex;
-  flex: 2;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: start;
@@ -621,7 +635,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 46.5625rem;
+  width: 100%;
   padding-top: 3.4375rem;
 }
 .testimonial__text p {
@@ -733,8 +747,10 @@ body {
 .footer__navigation__item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  margin-bottom: 0.625rem;
+  width: 7.8125rem;
 }
 .footer__navigation__item ul {
   display: flex;
@@ -748,6 +764,9 @@ body {
 }
 .footer__navigation__item li:last-child {
   padding-bottom: 0;
+}
+.footer__navigation__item:last-child {
+  margin-bottom: 0;
 }
 
 .navigation__item__header {
@@ -808,34 +827,27 @@ body {
   .line__breaker {
     display: none;
   }
+  .line__breaker.intro {
+    display: block;
+  }
   .intro__text {
     width: 34.375rem;
   }
   .intro__text p {
     font-size: 1.125rem;
   }
-  .promo__text p {
-    max-width: 28.125rem;
-  }
   .services__row {
     flex-direction: column;
     justify-content: space-around;
   }
   .services__text {
-    width: 58.75rem;
     padding: 0 0.9375rem;
     margin: 3.4375rem 0 2.1875rem 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .services__text p:last-child {
-    max-width: 32.5rem;
-  }
   .services__title {
     justify-self: center;
-  }
-  .services__subtitle {
-    width: 100%;
   }
   .services__cards {
     width: 100%;
@@ -851,22 +863,12 @@ body {
     flex-wrap: wrap;
   }
   .project__item {
-    width: 18.75rem;
+    flex: 0 0 calc(50% - 0.65625rem);
     margin-bottom: 1.875rem;
-  }
-  .project__image img {
-    width: 100%;
   }
   .team__row {
     -moz-column-gap: 3.75rem;
          column-gap: 3.75rem;
-  }
-  .team__image {
-    width: 24.6875rem;
-    height: 23.75rem;
-  }
-  .team__image img {
-    height: 100%;
   }
   .team__text {
     padding-bottom: 0.625rem;
@@ -887,23 +889,10 @@ body {
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "card_1 card_2" "card_3 card_4" "card_5 card_6" "card_7 card_8";
   }
-  .services__text {
-    width: 40.625rem;
-  }
 }
 @media screen and (max-width: 770px) {
-  .intro__title {
-    width: 34.375rem;
-  }
   .intro__title h1 {
     font-size: 3.75rem;
-  }
-  .team__image {
-    width: 14.5rem;
-    height: 14.25rem;
-  }
-  .testimonial__text {
-    width: 40.625rem;
   }
   .testimonial__text p {
     font-size: 2rem;
@@ -914,20 +903,9 @@ body {
     -moz-column-count: 2;
          column-count: 2;
   }
-  .services__text {
-    width: 31.25rem;
-  }
-  .testimonial__text {
-    width: 31.25rem;
-  }
-  .intro__text {
-    width: 31.25rem;
-  }
-  .intro__title {
-    width: 28.125rem;
-  }
   .intro__title h1 {
     font-size: 3.75rem;
+    line-height: 3.75rem;
   }
   .promo__row {
     display: flex;
@@ -946,9 +924,6 @@ body {
     font-size: 0;
     display: none;
   }
-  .promo__text {
-    width: 25rem;
-  }
   .promo__text h3 {
     text-align: center;
   }
@@ -957,10 +932,6 @@ body {
   }
   .team__row {
     flex-direction: column;
-  }
-  .team__image {
-    width: 25rem;
-    height: 25rem;
   }
   .team__info {
     margin-top: 1.25rem;
@@ -972,11 +943,7 @@ body {
   .button--watch {
     margin-top: 1.25rem;
   }
-  .testimonial__text {
-    width: 25rem;
-  }
   .services__text {
-    width: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -988,8 +955,22 @@ body {
   .services__text p {
     text-align: center;
   }
+  .project__item {
+    width: 100%;
+    flex: 0 0 100%;
+  }
 }
 @media screen and (max-width: 420px) {
+  .intro__title h1 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+  .slider__controls {
+    display: none;
+  }
+  .button--detail {
+    display: none;
+  }
   .news__row {
     -moz-column-count: 1;
          column-count: 1;
@@ -998,5 +979,14 @@ body {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: "card_1" "card_2" "card_3" "card_4" "card_5" "card_6" "card_7" "card_8";
+  }
+  .footer__social {
+    flex-direction: column;
+  }
+  .footer__social__item {
+    border: none;
+  }
+  .footer__navigation {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */

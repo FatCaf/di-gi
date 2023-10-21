@@ -29,6 +29,10 @@
     display: none;
   }
 
+  .line__breaker.intro {
+    display: block;
+  }
+
   // Itro Block
 
   .intro__text {
@@ -38,11 +42,6 @@
     }
   }
 
-  // Promo Block
-  .promo__text p {
-    max-width: 28.125rem;
-  }
-
   // Services Block
   .services__row {
     flex-direction: column;
@@ -50,23 +49,14 @@
   }
 
   .services__text {
-    width: 58.75rem;
     padding: 0 0.9375rem;
     margin: 3.4375rem 0 2.1875rem 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-
-    & p:last-child {
-      max-width: 32.5rem;
-    }
   }
 
   .services__title {
     justify-self: center;
-  }
-
-  .services__subtitle {
-    width: 100%;
   }
 
   .services__cards {
@@ -88,26 +78,13 @@
   }
 
   .project__item {
-    width: 18.75rem;
+    flex: 0 0 calc(50% - 0.65625rem);
     margin-bottom: 1.875rem;
-  }
-
-  .project__image img {
-    width: 100%;
   }
 
   // Team Block
   .team__row {
     column-gap: 3.75rem;
-  }
-
-  .team__image {
-    width: 24.6875rem;
-    height: 23.75rem;
-
-    & img {
-      height: 100%;
-    }
   }
 
   .team__text {
@@ -135,27 +112,16 @@
       "card_5 card_6"
       "card_7 card_8";
   }
-
-  .services__text {
-    width: 40.625rem;
-  }
 }
 
 @media screen and (max-width: 770px) {
   .intro__title {
-    width: 34.375rem;
     & h1 {
       font-size: 3.75rem;
     }
   }
 
-  .team__image {
-    width: 14.5rem;
-    height: 14.25rem;
-  }
-
   .testimonial__text {
-    width: 40.625rem;
     & p {
       font-size: 2rem;
     }
@@ -167,22 +133,10 @@
     column-count: 2;
   }
 
-  .services__text {
-    width: 31.25rem;
-  }
-
-  .testimonial__text {
-    width: 31.25rem;
-  }
-
-  .intro__text {
-    width: 31.25rem;
-  }
-
   .intro__title {
-    width: 28.125rem;
     & h1 {
       font-size: 3.75rem;
+      line-height: 3.75rem;
     }
   }
 
@@ -207,8 +161,6 @@
   }
 
   .promo__text {
-    width: 25rem;
-
     & h3 {
       text-align: center;
     }
@@ -220,11 +172,6 @@
 
   .team__row {
     flex-direction: column;
-  }
-
-  .team__image {
-    width: 25rem;
-    height: 25rem;
   }
 
   .team__info {
@@ -240,12 +187,7 @@
     margin-top: 1.25rem;
   }
 
-  .testimonial__text {
-    width: 25rem;
-  }
-
   .services__text {
-    width: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,9 +201,27 @@
       text-align: center;
     }
   }
+
+  .project__item {
+    width: 100%;
+    flex: 0 0 100%;
+  }
 }
 
 @media screen and (max-width: 420px) {
+  .intro__title h1 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+
+  .slider__controls {
+    display: none;
+  }
+
+  .button--detail {
+    display: none;
+  }
+
   .news__row {
     column-count: 1;
   }
@@ -278,5 +238,17 @@
       "card_6"
       "card_7"
       "card_8";
+  }
+
+  .footer__social {
+    flex-direction: column;
+  }
+
+  .footer__social__item {
+    border: none;
+  }
+
+  .footer__navigation {
+    flex-direction: column;
   }
 }
