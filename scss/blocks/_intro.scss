@@ -26,19 +26,21 @@
 .intro__title {
   margin-top: 8.75rem;
   text-align: center;
-  max-width: 32.125rem;
   & h1 {
     font-size: 6rem;
+    line-height: 6rem;
+    letter-spacing: 0.125rem;
+    font-weight: 400;
     color: #fff;
   }
 }
 
 .intro__text {
   margin-top: 4.375rem;
-  max-width: 54.125rem;
   text-align: center;
   & p {
     font-size: 1.5rem;
+    line-height: 1.625rem;
     color: #fff;
   }
 }

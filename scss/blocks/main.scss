@@ -17,3 +17,266 @@
 @import "./news";
 @import "./testimonial";
 @import "./footer";
+
+@media screen and (max-width: 1190px) {
+  // Container
+  .container {
+    max-width: 58.75rem;
+  }
+
+  // Br Element
+  .line__breaker {
+    display: none;
+  }
+
+  // Itro Block
+
+  .intro__text {
+    width: 34.375rem;
+    & p {
+      font-size: 1.125rem;
+    }
+  }
+
+  // Promo Block
+  .promo__text p {
+    max-width: 28.125rem;
+  }
+
+  // Services Block
+  .services__row {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .services__text {
+    width: 58.75rem;
+    padding: 0 0.9375rem;
+    margin: 3.4375rem 0 2.1875rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    & p:last-child {
+      max-width: 32.5rem;
+    }
+  }
+
+  .services__title {
+    justify-self: center;
+  }
+
+  .services__subtitle {
+    width: 100%;
+  }
+
+  .services__cards {
+    width: 100%;
+  }
+
+  .service__card__wrapper {
+    width: 100%;
+    border-top: 1px solid $secondary-color;
+  }
+
+  // Projects Block
+  .projects {
+    padding-bottom: 3.125rem;
+  }
+
+  .projects__row {
+    flex-wrap: wrap;
+  }
+
+  .project__item {
+    width: 18.75rem;
+    margin-bottom: 1.875rem;
+  }
+
+  .project__image img {
+    width: 100%;
+  }
+
+  // Team Block
+  .team__row {
+    column-gap: 3.75rem;
+  }
+
+  .team__image {
+    width: 24.6875rem;
+    height: 23.75rem;
+
+    & img {
+      height: 100%;
+    }
+  }
+
+  .team__text {
+    padding-bottom: 0.625rem;
+  }
+
+  .button--watch {
+    margin-top: 0;
+  }
+
+  // News Block
+  .news__row {
+    column-count: 3;
+    column-gap: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .services__cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "card_1 card_2"
+      "card_3 card_4"
+      "card_5 card_6"
+      "card_7 card_8";
+  }
+
+  .services__text {
+    width: 40.625rem;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .intro__title {
+    width: 34.375rem;
+    & h1 {
+      font-size: 3.75rem;
+    }
+  }
+
+  .team__image {
+    width: 14.5rem;
+    height: 14.25rem;
+  }
+
+  .testimonial__text {
+    width: 40.625rem;
+    & p {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .news__row {
+    column-count: 2;
+  }
+
+  .services__text {
+    width: 31.25rem;
+  }
+
+  .testimonial__text {
+    width: 31.25rem;
+  }
+
+  .intro__text {
+    width: 31.25rem;
+  }
+
+  .intro__title {
+    width: 28.125rem;
+    & h1 {
+      font-size: 3.75rem;
+    }
+  }
+
+  .promo__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button.call__back {
+    margin-top: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .intro__text {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    display: none;
+  }
+
+  .promo__text {
+    width: 25rem;
+
+    & h3 {
+      text-align: center;
+    }
+
+    & p {
+      text-align: center;
+    }
+  }
+
+  .team__row {
+    flex-direction: column;
+  }
+
+  .team__image {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .team__info {
+    margin-top: 1.25rem;
+    align-items: center;
+  }
+
+  .team__text {
+    font-size: 1rem;
+  }
+
+  .button--watch {
+    margin-top: 1.25rem;
+  }
+
+  .testimonial__text {
+    width: 25rem;
+  }
+
+  .services__text {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &.services__subtitle {
+      text-align: center;
+    }
+
+    & p {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .news__row {
+    column-count: 1;
+  }
+
+  .services__cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas:
+      "card_1"
+      "card_2"
+      "card_3"
+      "card_4"
+      "card_5"
+      "card_6"
+      "card_7"
+      "card_8";
+  }
+}

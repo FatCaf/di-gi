@@ -1,6 +1,9 @@
 .separator {
-  width: 6.25rem;
-  height: 0.5rem;
-  background-color: $main-color;
   margin: 2.1875rem 0;
+
+  & div {
+    width: 6.25rem;
+    height: 0.5rem;
+    background-color: $main-color;
+  }
 }

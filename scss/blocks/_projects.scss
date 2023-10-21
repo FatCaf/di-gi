@@ -17,7 +17,9 @@
 }
 
 .separator.white {
-  background-color: #fff;
+  & div {
+    background-color: #fff;
+  }
 }
 .projects__row {
   display: flex;
@@ -71,6 +73,7 @@
 
   & h3 {
     font-family: "Dosis", sans-serif;
+    letter-spacing: 2px;
     font-size: 1.25rem;
     font-weight: 700;
   }

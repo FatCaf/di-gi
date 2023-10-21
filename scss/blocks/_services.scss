@@ -4,10 +4,10 @@
   justify-content: space-between;
 }
 .services__text {
-  max-width: 32.1875rem;
   margin: 0 3.75rem;
   & p {
     font-size: 1.125rem;
+    line-height: 1.5rem;
     color: #797979;
   }
 }
@@ -19,7 +19,8 @@
 }
 
 .services__subtitle {
-  margin-top: 5.3125rem;
+  margin-top: 4.6875rem;
+  line-height: 1.625rem;
   font-size: 1.5rem;
   color: #4a4a4a;
 }
@@ -33,11 +34,10 @@
     "card_5 card_6 card_7 card_8";
 }
 
-.service__card {
+.service__card__wrapper {
   width: 14.375rem;
-  height: 16.875rem;
+  height: 17.1875rem;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-left: 1px solid $secondary-color;
@@ -45,6 +45,15 @@
   &:not(.top) {
     border-top: 1px solid $secondary-color;
   }
+}
+
+.service__card {
+  width: 12.8125rem;
+  height: 15.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     border: 4px solid $main-color;
@@ -53,7 +62,7 @@
   &:hover .service__card__additional {
     transform: scale(1);
     width: inherit;
-    height: inherit;
+    height: 150px;
   }
 }
 
@@ -66,7 +75,8 @@
   & p {
     font-weight: 500;
     color: #9b9b9b;
-    margin-bottom: 1.875rem;
+    line-height: 1.125rem;
+    margin-bottom: 30px;
   }
 
   & a {
@@ -82,6 +92,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.service__name {
+  letter-spacing: 0.125rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #4a4a4a;
+  text-align: center;
 }
 
 .service__card__one {
