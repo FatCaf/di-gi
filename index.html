@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <!-- <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
@@ -21,8 +23,32 @@
           </div>
           <div class="navigation">
             <div class="navigation__square">
-              <i class="fa-solid fa-bars"></i>
+              <div class="navigation__bar top"></div>
+              <div class="navigation__bar mid"></div>
+              <div class="navigation__bar bottom"></div>
             </div>
+            <nav class="navigation__menu">
+              <ul class="navigation__menu__list">
+                <li class="list__item">
+                  <a href="#">Головна</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Сервіси</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Проєкти</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Про нас</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Новини</a>
+                </li>
+                <li class="list__item">
+                  <a href="#">Відгуки</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
@@ -36,26 +62,57 @@
               ГЛОБАЛЬНО
             </h1>
           </div>
-          <div class="intro__text">
-            <p>
-              Di Gі — це діджитал агенція повного циклу, спрямована на найкращий
-              <br class="line__breaker" />
-              результат наших клієнтів в маркетингу, продажах та управленні
-            </p>
-          </div>
-          <button class="button button--detail">
-            <a href="#">Детальніше</a>
-          </button>
-          <div class="pagination">
-            <div class="pagination__item"></div>
-            <div class="pagination__item"></div>
-            <div class="pagination__item"></div>
+          <div class="owl-carousel">
+            <div>
+              <div class="carousel__container">
+                <div class="intro__text">
+                  <p>
+                    Di Gі — це діджитал агенція повного циклу, спрямована на
+                    найкращий
+                    <br class="line__breaker" />
+                    результат наших клієнтів в маркетингу, продажах та
+                    управленні
+                  </p>
+                </div>
+                <button class="button button--detail">
+                  <a href="#">Детальніше</a>
+                </button>
+              </div>
+            </div>
+            <div>
+              <div class="carousel__container">
+                <div class="intro__text">
+                  <p>
+                    Di Gі — це діджитал агенція повного циклу, спрямована на
+                    найкращий
+                    <br class="line__breaker" />
+                    результат наших клієнтів в маркетингу, продажах та
+                    управленні
+                  </p>
+                </div>
+                <button class="button button--detail">
+                  <a href="#">Детальніше</a>
+                </button>
+              </div>
+            </div>
+            <div>
+              <div class="carousel__container">
+                <div class="intro__text">
+                  <p>
+                    Di Gі — це діджитал агенція повного циклу, спрямована на
+                    найкращий
+                    <br class="line__breaker" />
+                    результат наших клієнтів в маркетингу, продажах та
+                    управленні
+                  </p>
+                </div>
+                <button class="button button--detail">
+                  <a href="#">Детальніше</a>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="slider__controls">
-        <div class="slider__control slider__control__forward"></div>
-        <div class="slider__control slider__control__backward"></div>
       </div>
     </section>
     <section class="promo">
@@ -458,16 +515,54 @@
     <section class="testimonial">
       <div class="container">
         <div class="testimonial__row">
-          <div class="testimonial__header">
-            <img src="images/apostrophs.svg" alt="" />
-          </div>
-          <div class="testimonial__text">
-            <p>
-              Якщо треба створити або підняти імідж компанії, то
-              <span>діджитал-маркетинг</span> є найбільш влучним
-            </p>
-            <div class="testimonial__author">
-              <p>- Маргарита Акулич</p>
+          <div class="owl-carousel">
+            <div>
+              <div class="carousel__container">
+                <div class="testimonial__header">
+                  <img src="images/apostrophs.svg" alt="" />
+                </div>
+                <div class="testimonial__text">
+                  <p>
+                    Якщо треба створити або підняти імідж компанії, то
+                    <span>діджитал-маркетинг</span> є найбільш влучним
+                  </p>
+                  <div class="testimonial__author">
+                    <p>- Маргарита Акулич</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="carousel__container">
+                <div class="testimonial__header">
+                  <img src="images/apostrophs.svg" alt="" />
+                </div>
+                <div class="testimonial__text">
+                  <p>
+                    Якщо треба створити або підняти імідж компанії, то
+                    <span>діджитал-маркетинг</span> є найбільш влучним
+                  </p>
+                  <div class="testimonial__author">
+                    <p>- Маргарита Акулич</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="carousel__container">
+                <div class="testimonial__header">
+                  <img src="images/apostrophs.svg" alt="" />
+                </div>
+                <div class="testimonial__text">
+                  <p>
+                    Якщо треба створити або підняти імідж компанії, то
+                    <span>діджитал-маркетинг</span> є найбільш влучним
+                  </p>
+                  <div class="testimonial__author">
+                    <p>- Маргарита Акулич</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="pagination blue">
@@ -557,4 +652,7 @@
     src="https://kit.fontawesome.com/a42e2276ba.js"
     crossorigin="anonymous"
   ></script>
+  <script src="owlcarousel/jquery.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/script.js"></script>
 </html>
