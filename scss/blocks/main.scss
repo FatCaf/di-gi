@@ -36,7 +36,7 @@
   // Itro Block
 
   .intro__text {
-    width: 34.375rem;
+    width: 550px;
     & p {
       font-size: 1.125rem;
     }
@@ -121,6 +121,10 @@
     }
   }
 
+  .intro__text {
+    width: 28.125rem;
+  }
+
   .testimonial__text {
     & p {
       font-size: 2rem;
@@ -138,6 +142,10 @@
       font-size: 3.75rem;
       line-height: 3.75rem;
     }
+  }
+
+  .intro__text {
+    width: 21.875rem;
   }
 
   .promo__row {
@@ -212,10 +220,6 @@
   .intro__title h1 {
     font-size: 1.75rem;
     line-height: 1.75rem;
-  }
-
-  .slider__controls {
-    display: none;
   }
 
   .button--detail {

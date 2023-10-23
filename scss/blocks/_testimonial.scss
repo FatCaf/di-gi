@@ -1,5 +1,6 @@
 .testimonial {
   padding: 5.625rem 0 8.3125rem 0;
+  position: relative;
 }
 .testimonial__row {
   display: flex;
@@ -36,16 +37,5 @@
     font-weight: 700;
     font-size: 1.5rem;
     letter-spacing: 2px;
-  }
-}
-.pagination.blue {
-  margin-top: 5rem;
-}
-.pagination__item.blue {
-  background-color: $main-color;
-  border-color: $main-color;
-
-  &:hover {
-    background-color: transparent;
   }
 }
