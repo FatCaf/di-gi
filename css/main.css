@@ -27,7 +27,7 @@ button:focus {
 }
 
 button,
-input[type=email] {
+input[type="email"] {
   cursor: pointer;
   background: none;
 }
@@ -183,7 +183,8 @@ body {
 }
 
 .intro {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("../images/intro/bg-img.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("../images/intro/bg-img.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
 }
@@ -425,7 +426,7 @@ body {
   justify-content: space-around;
   align-items: center;
   -moz-column-gap: 1.3125rem;
-       column-gap: 1.3125rem;
+  column-gap: 1.3125rem;
 }
 
 .project__item {
@@ -464,7 +465,7 @@ body {
   justify-content: space-between;
   align-items: center;
   -moz-column-gap: 0.9375rem;
-       column-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -491,7 +492,7 @@ body {
   justify-content: space-between;
   align-items: center;
   -moz-column-gap: 6.25rem;
-       column-gap: 6.25rem;
+  column-gap: 6.25rem;
 }
 
 .team__image {
@@ -549,9 +550,9 @@ body {
 .news__row {
   margin: 0 auto;
   -moz-columns: 4;
-       columns: 4;
+  columns: 4;
   -moz-column-gap: 1.875rem;
-       column-gap: 1.875rem;
+  column-gap: 1.875rem;
 }
 
 .news__item {
@@ -563,7 +564,7 @@ body {
   position: relative;
   margin-bottom: 1.875rem;
   -moz-column-break-inside: avoid;
-       break-inside: avoid;
+  break-inside: avoid;
 }
 
 .news__image {
@@ -865,7 +866,7 @@ body {
   }
   .team__row {
     -moz-column-gap: 3.75rem;
-         column-gap: 3.75rem;
+    column-gap: 3.75rem;
   }
   .team__text {
     padding-bottom: 0.625rem;
@@ -875,9 +876,9 @@ body {
   }
   .news__row {
     -moz-column-count: 3;
-         column-count: 3;
+    column-count: 3;
     -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
+    column-gap: 1.25rem;
   }
 }
 @media screen and (max-width: 960px) {
@@ -901,7 +902,7 @@ body {
 @media screen and (max-width: 685px) {
   .news__row {
     -moz-column-count: 2;
-         column-count: 2;
+    column-count: 2;
   }
   .intro__title h1 {
     font-size: 3.75rem;
@@ -973,7 +974,7 @@ body {
   }
   .news__row {
     -moz-column-count: 1;
-         column-count: 1;
+    column-count: 1;
   }
   .services__cards {
     grid-template-columns: repeat(1, 1fr);
@@ -989,4 +990,4 @@ body {
   .footer__navigation {
     flex-direction: column;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
