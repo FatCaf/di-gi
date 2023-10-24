@@ -18,3 +18,28 @@ $(document).ready(function () {
     nav: true,
   });
 });
+
+// Select all the menu links
+const menuLinks = document.querySelectorAll(".list__item a");
+
+// Add a click event listener to each menu link
+menuLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault(); // Prevent the default link behavior
+
+    const targetId = this.getAttribute("href").substring(1); // Extract the target ID
+    const targetElement = document.getElementById(targetId); // Get the target element
+
+    if (targetElement) {
+      // Calculate the target's position relative to the viewport
+      const offsetTop =
+        targetElement.getBoundingClientRect().top + window.scrollY;
+
+      // Scroll to the target smoothly
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth",
+      });
+    }
+  });
+});
