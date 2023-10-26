@@ -244,6 +244,16 @@
       "card_8";
   }
 
+  .testimonial__text {
+    & p {
+      font-size: 1.5rem;
+    }
+
+    & span {
+      font-size: 1.5rem;
+    }
+  }
+
   .footer__social {
     flex-direction: column;
   }
